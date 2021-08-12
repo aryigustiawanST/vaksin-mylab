@@ -164,6 +164,10 @@
 					$pdf->Cell(30,5,"Vaksin yang diberikan",1,0,"L",true);	
 					$pdf->Cell(140,5, $peserta['order_detail'][0]['test_name'],1,0,"L",true);
 					$pdf->Cell(20,5, '',1,1,"",true);
+
+					$pdf->Cell(30,5,"Tanggal Vaksin",1,0,"L",true);	
+					$pdf->Cell(140,5, $peserta['order_detail'][0]['test_date_time'],1,0,"L",true);
+					$pdf->Cell(20,5, '',1,1,"",true);
 					// END FROM API
 
 					$pdf->Ln(6);	
